@@ -1,0 +1,13 @@
+service: Test
+
+plugins:
+  - serverless-dotenv-plugin
+
+provider:
+  name: aws
+
+  ## In order to print out the hosted domain via `serverless info` we need to define the DomainName output for CloudFormation
+  Outputs:
+    WebAppCloudFrontDistributionOutput:
+      Value:
+        'Fn::GetAtt': [ WebAppCloudFrontDistribution, DomainName ]

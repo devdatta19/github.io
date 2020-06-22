@@ -1,0 +1,151 @@
+
+<div class="container" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+  <mat-card style="text-align: center;">
+  <mat-card-title>Exam</mat-card-title>
+<div class="row">
+  <div class="col-sm-4">Time: 00:00:00</div>
+  <div class="col-sm-4"></div>
+  <div class="col-sm-4">Question 1/1</div>
+  <!-- <div class="float-left"></div>
+  <div class="float-right"></div> -->
+</div>
+  <!-- <mat-card-content> -->
+    
+  <!--</mat-card-content>  -->
+  <!-- <mat-card-content></mat-card-content> -->
+  
+  <!-- <mat-card-content>
+    
+  </mat-card-content> -->
+  
+	<mat-card-content>
+		<form [formGroup]="form" (ngSubmit)="submit()" autocomplete="off">
+      <div fxLayout="column" fxLayoutAlign="space-around center" >
+        <div class="imgrow" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+          <div class="imgcolumn">
+            <img mat-card-image width="innerWidth" class ="ansimg" src="assets/images/Q1.png"  alt="A">
+          </div>
+          <div class="imgcolumn">
+            <img mat-card-image width="innerWidth" class ="ansimg" src="assets/images/Q1.1.png"  alt="A">
+          </div>
+        </div>
+    
+        <div class="imgrow" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+          <div class="answercolumn">
+            <mat-radio-button value="a" class="float-left">A</mat-radio-button><img  class ="ansimg" mat-card-image src="assets/images/a.png" 
+                alt="A">
+          </div>
+          <div class="answercolumn">
+            <mat-radio-button value="b" class="float-left">B</mat-radio-button><img class ="ansimg" mat-card-image src="assets/images/b.png"    
+                alt="A">
+          </div>
+        </div>
+        <div class="imgrow">
+          <div class="answercolumn">
+            <mat-radio-button value="c" class="float-left">C</mat-radio-button><img class ="ansimg" mat-card-image src="assets/images/c.png" 
+                alt="A">
+          </div>
+          <div class="answercolumn">
+            <mat-radio-button value="d" class="float-left">D</mat-radio-button><img class ="ansimg" mat-card-image src="assets/images/d.png" 
+                alt="A">
+          </div>
+        </div>
+    
+      </div>
+      <div class="row">
+        <div class="col-sm-4 margin-auto center" style="margin-top: 10px;">
+          <button mat-flat-button color="warn" class="btn btn-primary btn-block" type="submit" mat-button>Previous</button>
+        </div>
+        <div class="col-sm-4 margin-auto center" style="margin-top: 10px;">
+          <button mat-flat-button color="primary" class="btn btn-primary btn-block" type="submit" mat-button>Submit</button>
+        </div>
+        <div class="col-sm-4 margin-auto center" style="margin-top: 10px;">
+          <button mat-flat-button color="warn" class="btn btn-primary btn-block" type="submit" mat-button>Next</button>
+        </div>
+      </div>
+			<!-- <div class="button">
+        <button mat-flat-button color="primary" class="btn btn-primary btn-block float-left" type="submit" mat-button>Submit</button>
+				<button mat-flat-button color="primary" class="btn btn-primary btn-block float-right" type="submit" mat-button>Submit</button>
+      </div> -->
+      
+		</form>
+  </mat-card-content>
+  
+</mat-card>
+<mat-card style="text-align: center;"><mat-card-content>
+  <div fxLayout="column" fxLayoutAlign="space-around center" >
+    <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+  <button style="margin-left: 5px; margin-bottom: 5px;"  class="btn btn-primary btn-circle btn-sm">1</button>
+  <button  style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">2</button>
+  <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">3</button>
+  <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">4</button>
+  <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">5</button>
+  <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">6</button>
+  <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">7</button>
+  <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">8</button>
+  <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">9</button>
+  <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">10</button>
+  <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">11</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">12</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">13</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">14</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">15</button>
+  </div>
+  <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">16</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">17</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">18</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">19</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">20</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">21</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">22</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">23</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">24</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">25</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">26</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">27</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">28</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">29</button>
+    <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">30</button>
+    </div>
+    
+    <!-- <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">31</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">32</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">33</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">34</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">35</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">36</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">37</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">38</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">39</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">40</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">41</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">42</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">43</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">44</button>
+      <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">45</button>
+      </div>
+      <div fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">46</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">47</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">48</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">49</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">50</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">51</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">52</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">53</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">54</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">55</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">56</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">57</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">58</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">59</button>
+        <button style="margin-left: 5px; margin-bottom: 5px;" class="btn btn-primary btn-circle btn-sm">60</button>
+        </div> -->
+  </div>
+</mat-card-content></mat-card>
+</div>
+<!-- <div class="container" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px"> -->
+  
+  <!-- </div> -->
