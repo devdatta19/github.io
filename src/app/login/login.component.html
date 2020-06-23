@@ -1,0 +1,59 @@
+<mat-card style="text-align: center;">
+	<!-- <div class="row">
+		<div class="landscape col-sm-6">
+			<img class="center" src="https://aayaa.in/wp-content/uploads/2020/06/header_logo.png">
+		</div>
+	</div> -->
+	
+	<mat-card-header>
+		<div fxLayout="column" fxLayoutAlign="space-around center" >
+			<div class="imgrow" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="20px">
+				<div class="imgcolumn">
+					<img mat-card-image src="https://aayaa.in/wp-content/uploads/2020/06/header_logo.png" alt="Logo">
+				  </div>
+			</div>
+		</div></mat-card-header>
+	<mat-card-title>CSRL Open Test</mat-card-title>
+	<mat-card-content>
+		<!-- <div class="form-group">
+			<label for="phoneNumber">Phone Number</label>
+			<input name="phoneNumber" [(ngModel)]="phoneNumber" type="text" class="form-control">
+		  </div>
+		  <div id="recaptcha-container"></div>
+		  <button 
+			class="btn btn-primary btn-block"
+			[disabled]="disableOTPSendButton"
+			(click)="sendOTP()">Send OTP</button>
+		  <hr>
+		  <div class="form-group">
+			<label for="otp">OTP</label>
+			<input name="otp" [(ngModel)]="otp" type="text" class="form-control">
+		  </div>
+		  <button mat-flat-button color="primary" class="btn btn-primary btn-block" (click)="verifyOTP()">Verify OTP</button>
+		  <button mat-flat-button color="primary" class="btn btn-primary btn-block" (click)="togglePhoneSignIn()">Cancel</button> -->
+		<form [formGroup]="form">
+			
+				<mat-form-field>
+					<input type="text" matInput placeholder="Phone number" maxlength="10" formControlName="phoneNumber">
+			</mat-form-field>
+			<div id="recaptcha-container"></div>
+			<div class="button">
+				<button  class="btn btn-primary btn-block"
+			[disabled]="disableOTPSendButton"
+			(click)="sendOTP()" mat-flat-button color="primary" color="primary">Send OTP</button>
+			</div>
+            <mat-form-field>
+					<input type="text" matInput placeholder="Enter OTP" maxlength="6" formControlName="otp">
+            </mat-form-field>
+		
+			<p *ngIf="error" class="error">
+				{{ error }}
+			</p>
+			<div class="button">
+				<button mat-flat-button color="primary" class="btn btn-primary btn-block" (click)="verifyOTP()">Sign in</button>
+				
+			</div>
+			
+		</form>
+	</mat-card-content>
+</mat-card>

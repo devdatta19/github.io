@@ -1,0 +1,42 @@
+<!-- <mat-sidenav-container fullscreen> -->
+  <div class="example-sidenav-content">
+    <!-- <router-outlet></router-outlet> -->
+    
+    <mat-icon (click)="sidenav.toggle()" class="sidenav-menu">menu</mat-icon>
+  </div>
+  <mat-sidenav #sidenav mode="side" class="example-sidenav" [ngStyle]="{ 'width.em': sidenavWidth }" opened="true"
+    (mouseenter)="increase()" (mouseleave)="decrease()">
+    <div class="logomain">Admin</div>
+    <mat-nav-list>
+      <mat-list-item routerLink="/admin/students" routerLinkActive="active">
+        <mat-icon mat-list-icon>person</mat-icon>
+        <div fxFlex="10"></div>
+        <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+          <h5 class="lead">Students</h5>
+        </div>
+      </mat-list-item>
+
+      <mat-list-item routerLink="/admin/add-question" routerLinkActive="active">
+        <mat-icon mat-list-icon>settings</mat-icon>
+        <div fxFlex="10"></div>
+        <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+          <h5 class="lead">Add Questions</h5>
+        </div>
+      </mat-list-item>
+
+      <!-- <mat-list-item routerLink="3" routerLinkActive="active">
+        <mat-icon mat-list-icon>local_phone</mat-icon>
+        <div fxFlex="10"></div>
+        <div *ngIf="sidenavWidth > 6" class="sidenav-item">
+          <h5 class="lead">Contact</h5>
+        </div>
+      </mat-list-item> -->
+
+
+
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  
+<!-- </mat-sidenav-container> -->

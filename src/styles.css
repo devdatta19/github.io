@@ -1,0 +1,492 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+body {
+    font-family: 'Roboto', sans-serif !important;
+    margin: 0px;
+}
+
+html {
+    height: 100%;
+}
+
+
+/* .table td, .table th {
+    padding: 0.25rem !important;
+} */
+
+.center {
+    text-align: center;
+}
+
+.margin-auto {
+    margin: 0px auto !important;
+}
+
+
+/*
+   server-side-angular-way.component.css
+*/
+
+.no-data-available {
+    text-align: center;
+}
+
+
+/*
+    src/styles.css (i.e. your global style)
+*/
+
+.dataTables_empty {
+    display: none !important;
+}
+
+.nav-link {
+    font-size: 16px;
+}
+
+.active-link {
+    color: #00B132;
+    font-weight: bold;
+}
+
+.nav-link:hover {
+    color: #00B132;
+}
+
+.dropdown-item:hover {
+    color: #00B132;
+}
+
+h1:hover {
+    color: #00B132;
+}
+
+h2:hover {
+    color: #00B132;
+}
+
+h3:hover {
+    color: #00B132;
+}
+
+h4:hover {
+    color: #00B132;
+}
+
+h5:hover {
+    color: #00B132;
+}
+
+h6:hover {
+    color: #00B132;
+}
+
+tbody tr:hover {
+    color: #00B132;
+}
+
+p:hover {
+    color: #00B132;
+}
+
+span:hover {
+    color: #00B132;
+}
+
+.txt-color:hover {
+    color: #00B132;
+}
+
+.onhover:hover {
+    color: #00B132;
+}
+
+
+/* .dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    background-color:#00B132 !important;
+    background:#00B132 !important;
+} */
+
+.mat-card:not([class*=mat-elevation-z]) {
+    box-shadow: none;
+}
+
+.mat-card {
+    border: 1px solid #eee;
+}
+
+.table-hover tbody tr:hover {
+    background: rgba(191, 191, 191, 0.075) !important;
+}
+
+table {
+    font-size: 14px;
+}
+
+table tr {
+    color: #777;
+}
+
+table {
+    color: #555;
+}
+
+table.dataTable thead th,
+table.dataTable thead td,
+table.dataTable.no-footer {
+    border-bottom: 1px solid #57a13a !important;
+}
+
+input,
+textarea,
+select {
+    border: 1px solid #ddd;
+    padding: 6px 12px;
+    /* border-radius: 5px; */
+}
+
+select {
+    padding: 6px 0px 6px 10px !important;
+}
+
+.txt-color {
+    color: #4A4A4A
+}
+
+.txt-bold {
+    font-weight: bold
+}
+
+.txt-16 {
+    font-size: 16px;
+}
+
+.green-badge {
+    background: #00B132;
+    width: 100%;
+    color: #fff;
+    font-size: 100% !important;
+}
+
+.green-badge:hover {
+    background: #00B132;
+    width: 100%;
+    color: #fff !important;
+}
+
+.red-badge {
+    background: red;
+    width: 100%;
+    color: #fff;
+    font-size: 100% !important;
+}
+
+.red-badge:hover {
+    background: red;
+    width: 100%;
+    color: #fff !important;
+}
+
+.dataTables_wrapper .dataTables_length,
+.dataTables_wrapper .dataTables_filter,
+.dataTables_wrapper .dataTables_info,
+.dataTables_wrapper .dataTables_processing,
+.dataTables_wrapper .dataTables_paginate {
+    color: #333333;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+.dataTables_wrapper .dataTables_paginate .paginate_button.current:hover {
+    color: #ffffff !important;
+    border: 1px solid #979797;
+    background: #00B132;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover {
+    background: none !important;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover {
+    color: white !important;
+    border: 1px solid #00B132;
+    background: #00B132;
+}
+
+.dataTables_wrapper .dataTables_paginate .paginate_button {
+    color: #4A4A4A !important;
+}
+
+.welcm-txt-div {
+    margin-left: 8%;
+    font-size: 17px;
+}
+
+.welcm-txt-color {
+    color: rgba(0, 0, 0, .5) !important;
+}
+
+.employer-name-color {
+    color: rgba(0, 0, 0, .5) !important;
+    text-decoration: none;
+}
+
+.employer-name-color:hover {
+    text-decoration: none !important;
+}
+
+.info-box {
+    display: block;
+    min-height: 90px;
+    background: #fff;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+
+.bg-aqua,
+.callout.callout-info,
+.alert-info,
+.label-info,
+.modal-info .modal-body {
+    background-color: #00c0ef !important;
+}
+
+.info-box-icon {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    display: block;
+    float: left;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 90px;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.info-box-content {
+    padding: 5px 10px;
+    margin-left: 90px;
+}
+
+.info-box-text {
+    text-transform: uppercase;
+}
+
+.progress-description,
+.info-box-text {
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.info-box-number {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.statusCard .icon {
+    padding: 35px;
+    background: gray;
+}
+
+.statusCard .icon i {
+    font-size: 35px;
+}
+
+.statusCard .icontext {
+    padding: 10px 15px;
+}
+
+.statusCard .fa-usd {
+    color: #fff;
+}
+
+.statusCard .icon {
+    background: #00B132;
+}
+
+.statusCard .bg-light-color {
+    background-color: #ffffff!important;
+}
+
+.statusCard h2 {
+    font-size: 24px;
+}
+
+.statusCard p {
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+#notfound {
+    position: relative;
+    height: 82vh;
+    background: #f6f6f6;
+}
+
+#notfound .notfound {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.notfound {
+    max-width: 767px;
+    width: 100%;
+    line-height: 1.4;
+    padding: 110px 40px;
+    text-align: center;
+}
+
+.notfound .notfound-404 {
+    position: relative;
+    height: 180px;
+}
+
+.notfound .notfound-404 h1 {
+    font-family: 'Roboto', sans-serif;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 165px;
+    font-weight: 700;
+    margin: 0px;
+    color: #262626;
+    text-transform: uppercase;
+}
+
+.notfound .notfound-404 h1>span {
+    color: #00b7ff;
+}
+
+.notfound h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    font-weight: 400;
+    text-transform: uppercase;
+    color: #151515;
+    margin-top: 0px;
+    margin-bottom: 25px;
+}
+
+.notfound .notfound-search {
+    position: relative;
+    max-width: 320px;
+    width: 100%;
+    margin: auto;
+}
+
+.notfound .notfound-search>input {
+    font-family: 'Roboto', sans-serif;
+    width: 100%;
+    height: 50px;
+    padding: 3px 65px 3px 30px;
+    color: #151515;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #c5c5c5;
+    border-radius: 40px;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.notfound .notfound-search>input:focus {
+    border-color: #00b7ff;
+}
+
+.notfound .notfound-search>button {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border: none;
+    background: transparent;
+    padding: 0;
+    cursor: pointer;
+}
+
+.notfound .notfound-search>button>span {
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%) rotate(-45deg);
+    -ms-transform: translate(-50%, -50%) rotate(-45deg);
+    transform: translate(-50%, -50%) rotate(-45deg);
+    margin-left: -3px;
+}
+
+.notfound .notfound-search>button>span:after {
+    position: absolute;
+    content: '';
+    width: 10px;
+    height: 10px;
+    left: 0px;
+    top: 0px;
+    border-radius: 50%;
+    border: 4px solid #c5c5c5;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.notfound-search>button>span:before {
+    position: absolute;
+    content: '';
+    width: 4px;
+    height: 10px;
+    left: 7px;
+    top: 17px;
+    border-radius: 2px;
+    background: #c5c5c5;
+    -webkit-transition: 0.2s all;
+    transition: 0.2s all;
+}
+
+.notfound .notfound-search>button:hover>span:after {
+    border-color: #00b7ff;
+}
+
+.notfound .notfound-search>button:hover>span:before {
+    background-color: #00b7ff;
+}
+
+.dt-th-td {
+    padding-left: 10px !important;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.float-right {
+    float: right !important;
+}
+
+@media only screen and (max-width: 767px) {
+    .notfound h2 {
+        font-size: 18px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .notfound .notfound-404 h1 {
+        font-size: 141px;
+    }
+}
