@@ -1,8 +1,17 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { ToastrModule } from 'ngx-toastr';
 import { NgModule,CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { MaterialModule } from './material.module';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppFirebaseModule } from './app-firebase/app-firebase.module';
+import { AngularFireModule } from "@angular/fire";
+import { environment } from "../environments/environment";
+import {
+  AngularFireStorageModule,
+  AngularFireStorageReference,
+  AngularFireUploadTask
+} from "@angular/fire/storage";
+
 
 import { AuthService } from './common/auth/auth.service';
 import { WindowService } from './common/window/window.service';
@@ -39,11 +48,20 @@ import { AddQuestionComponent } from './add-question/add-question.component'; */
     HttpClientModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    ToastrModule.forRoot({
+      toastClass: 'toast toast-bootstrap-compatibility-fix',
+      timeOut: 5000,
+      positionClass: 'toast-bottom-right',
+      closeButton : true,
+      preventDuplicates : true
+    }),
     MaterialModule,
     NoopAnimationsModule,
     FormsModule,
     ReactiveFormsModule,
-    AppFirebaseModule
+    AppFirebaseModule,
+    AngularFireStorageModule,
+    AngularFireModule.initializeApp(environment.firebase, "cloud")
   ],
   schemas: [
     CUSTOM_ELEMENTS_SCHEMA

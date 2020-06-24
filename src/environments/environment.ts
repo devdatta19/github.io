@@ -9,11 +9,19 @@ export const environment = {
     authDomain: 'http://lucky-nature-110604.firebaseapp.com/',
     databaseURL: 'https://lucky-nature-110604.firebaseio.com/',
     projectId: 'lucky-nature-110604',
-    storageBucket: 'http://lucky-nature-110604.appspot.com/',
+    storageBucket: 'gs://lucky-nature-110604.appspot.com/',
     messagingSenderId: '370705515329'
   },
   verifyPhone : 'http://test.aayaa.in/aras/numberCheck',
   login : 'http://test.aayaa.in/aras/loginResult',
+  firstQuestion : 'http://test.aayaa.in/aras/firstQuestion',
+  nextQuestion : 'http://test.aayaa.in/aras/nextQuestion',
+  submitAnswer : 'http://test.aayaa.in/aras/submitAnswer',
+  askHelp : 'http://test.aayaa.in/aras/askHelp',
+  numberOfTabs : 'http://test.aayaa.in/aras/noOfTabs',
+  result : 'http://test.aayaa.in/aras/result',
+  listOfUsers : 'http://test.aayaa.in/aras/listOfUsers',
+  createUpdateQuestionAnswer : 'http://test.aayaa.in/aras/createUpdateQuestionAnswer'
 };
 
 /*

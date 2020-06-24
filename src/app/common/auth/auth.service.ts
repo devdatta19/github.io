@@ -22,8 +22,45 @@ export class AuthService {
     };
     this.apiUrl = environment.verifyPhone;
     return this.http
-        .post(this.apiUrl ,data, httpOptions);
+        .post(this.apiUrl ,data);
 }
+
+public loginResult(data : any) : Observable<any>{
+  const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+  this.apiUrl = environment.login;
+  return this.http
+      .post(this.apiUrl ,data);
+}
+
+public firstQuestion(data : any) : Observable<any>{
+  const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+  this.apiUrl = environment.firstQuestion;
+  return this.http
+      .post(this.apiUrl ,data);
+}
+
+public nextQuestion(data : any) : Observable<any>{
+  const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+  this.apiUrl = environment.nextQuestion;
+  return this.http
+      .post(this.apiUrl ,data);
+}
+
+public userList(data : any) : Observable<any>{
+  const httpOptions = {
+      headers: new HttpHeaders({ 'Content-Type': 'application/json' })
+  };
+  this.apiUrl = environment.listOfUsers;
+  return this.http
+      .post(this.apiUrl ,data);
+}
+
 
   private getProviderInstance(provider: string) {
     let providerInstance;
